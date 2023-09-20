@@ -4,7 +4,7 @@ import collections
 from Game import Game
 
 def main():
-    config = yaml.safe_load(open('config.yaml'))
+    config = yaml.safe_load(open('config/config.yaml'))
     filePath = config['values']['filePath']
     regex = config['values']['regex']
     regexCompiled = re.compile(regex)
